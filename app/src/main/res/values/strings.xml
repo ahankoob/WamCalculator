@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">محاسبه وام و سپرده</string>
+    <string name="mainTitle">دستیار محاسبه گر </string>
+    <string name="mainDescription">با استفاده از ابزارهای زیر می توانید کلیه محاسبات مورد نیاز در مورد وام و سود حساب را انجام دهید</string>
+    <string name="mablaghVam">مبلغ وام (به ریال)</string>
+    <string name="soodPeecent">درصد سود سالانه</string>
+    <string name="bazpardakht">بازپرداخت (ماه)</string>
+    <string name="masdoodiMablagh">مبلغ مسدودی (به ریال)</string>
+    <string name="resultGhestMonthly">مبلغ قسط ماهیانه</string>
+    <string name="resultSood">کل سود پرداختی</string>
+    <string name="resultbazpardakht">کل مبلغ پرداختی</string>
+    <string name="resultRealSood">درصد سود واقعی</string>
+    <string name="ButtonMohasebeTitle">محسابه</string>
+    <string name="ButtonEmptyForm">خالی کردم فرم</string>
+    <string name="ButtonBazgashtTitle">بازگشت</string>
+    <string name="EmptyFieldError">این فیلد نمی تواند خالی باشد</string>
+    <string name="masdoodiActivityTitle">محاسبه اقساط وام با مسدودی</string>
+    <string name="NewCalcActivityTitle">محاسبه اقساط وام با مسدودی</string>
+
+
+</resources>

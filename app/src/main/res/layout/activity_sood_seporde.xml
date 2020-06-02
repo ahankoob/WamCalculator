@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ahankoob.wamcalculator.SoodSeporde"
+    android:layoutDirection="rtl"
+    android:background="@color/primaryBackgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/SoodSepordeHeader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right">
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@drawable/savemoney"
+            android:layout_alignParentRight="true"
+            android:id="@+id/drawableBudget"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HomeTitle"
+            android:text="محاسبه سود سپرده"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/drawableBudget"
+            android:layout_marginLeft="@dimen/_30sdp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_below="@id/NewCalcHeader"
+        android:padding="@dimen/_10sdp"
+        tools:ignore="NotSibling">
+        <RelativeLayout
+            android:id="@+id/FormLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layoutDirection="rtl"
+            android:background="@drawable/button_shape"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mablaghLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="مبلغ سپرده (به ریال)"
+                android:textSize="@dimen/_14sdp"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mablagh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_horizontal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/darsadSoodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/soodPeecent"
+                android:textSize="@dimen/_14sdp"
+                app:errorEnabled="true"
+                android:layout_below="@+id/mablaghLayout"
+                android:layout_alignParentRight="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/darsadSood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="center_horizontal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ResultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:layoutDirection="rtl"
+            android:background="@drawable/button_shape"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/ResultSoodMonthlyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:minHeight="@dimen/_150sdp">
+
+                <LinearLayout
+                    android:id="@+id/ResultIconBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_alignParentRight="true">
+                    <TextView
+                        android:id="@+id/ResultSoodIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/fa_icon_calendar"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/ResultSoodTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مبلغ سود ماهیانه"
+                        android:textSize="@dimen/_18sdp"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ResultSoodText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000000000ریال"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_below="@id/ResultIconBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center_horizontal"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/BottomLayout"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBottomNav"
+        >
+
+        <ImageButton
+            android:id="@+id/calcMohasebe"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/calculator"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            />
+        <ImageButton
+            android:id="@+id/calcReset"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/form"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+
+        <ImageButton
+            android:id="@+id/calcBazgasht"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

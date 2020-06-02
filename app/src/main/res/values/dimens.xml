@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="homeHeaderHeight">200dp</dimen>
+    <dimen name="ChildHeaderHeight">80dp</dimen>
+    <dimen name="homeHeaderTitleFontSize">30dp</dimen>
+    <dimen name="contentMarginLeftRight">20dp</dimen>
+    <dimen name="contentMatginUpDown">20dp</dimen>
+    <dimen name="bottomNavigrationHeight">60dp</dimen>
+    <dimen name="homeNavIconSize">25dp</dimen>
+    <dimen name="layoutPadding">20dp</dimen>
+    <dimen name="mainTitleFontSize">20dp</dimen>
+    <dimen name="bankListItemPadding">5dp</dimen>
+    <dimen name="widthLayoutBankList">100dp</dimen>
+    <dimen name="heighLayoutBankList">140dp</dimen>
+    <dimen name="widthBankList">80dp</dimen>
+    <dimen name="heightBankList">100dp</dimen>
+    <dimen name="widthBankListImage">60dp</dimen>
+    <dimen name="heightBankListImage">60dp</dimen>
+    <dimen name="widthBankListTitle">80dp</dimen>
+    <dimen name="heightBankListTitle">30dp</dimen>
+    <dimen name="fontSizeBankLabelTitle">14dp</dimen>
+    <dimen name="fontSizeBankTitle">12dp</dimen>
+    <dimen name="fontSizeHomeNav">15dp</dimen>
+    <dimen name="fontSizeResult">13dp</dimen>
+    <dimen name="resultLAyoutsHeight">30dp</dimen>
+    <dimen name="AslSoodItemHeight">90dp</dimen>
+
+
+</resources>

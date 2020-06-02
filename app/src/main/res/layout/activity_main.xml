@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahankoob.wamcalculator.MainActivity"
+    android:layoutDirection="rtl"
+    android:gravity="right"
+    android:background="@color/primaryBackgroundColor"
+    android:id="@+id/mainActivityLayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/homeHeader"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@drawable/budget"
+            android:layout_alignParentRight="true"
+            android:id="@+id/drawableBudget"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/HomeTitle"
+                android:text="@string/mainTitle"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@id/drawableBudget"
+                android:layout_marginLeft="@dimen/_30sdp"/>
+
+    </RelativeLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banksListGridView"
+        android:numColumns="1"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/homeHeader"
+        android:layout_margin="@dimen/_5sdp"
+        >
+
+    </GridView>
+
+</RelativeLayout>

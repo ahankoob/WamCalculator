@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/banksLinearLAyout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+<LinearLayout   android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_shape"
+                android:padding="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                >
+
+    <ImageView
+        android:id="@+id/homeNavIcon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/budget"
+
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/homeNavTitle"
+        android:textColor="@color/colorBankTitle"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_13sdp"
+        android:maxLines="1"
+        android:text="عنوان منو"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</LinearLayout>
+    </LinearLayout>

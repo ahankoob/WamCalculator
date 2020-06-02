@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_icon_calendar">&#xf133;</string>
+    <string name="fa_icon_money">&#xf0d6;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+    <string name="fa_icon_percent">&#xf295;</string>
+    <string name="bankIcon">&#xf19c;</string>
+    <string name="homeNavIconCalc">&#xf1ec;</string>
+    <string name="homeNavIconInfo">&#xf05a;</string>
+</resources>
